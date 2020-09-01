@@ -1,24 +1,350 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="4zB-1C-oaY">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--대구 유동 인구-->
+        <scene sceneID="QYp-74-bvY">
+            <objects>
+                <viewController id="8zQ-iP-1jv" customClass="SecondViewController" customModule="AvoidCoronaApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vcY-qo-aKS">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="유동 인구 관련" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LLn-n7-6OA">
+                                <rect key="frame" x="20" y="71" width="225" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="Wuv-w5-ex7"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="대구 유동 인구" id="UAr-dZ-QCm"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wJO-bb-hXB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-594" y="611"/>
+        </scene>
+        <!--국내 지역별 상세 현황-->
+        <scene sceneID="kcT-pc-UXb">
+            <objects>
+                <viewController id="fbI-a0-ovA" customClass="FirstViewController" customModule="AvoidCoronaApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MFH-il-2UF">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="Ncm-h3-Dua">
+                                <rect key="frame" x="40" y="20" width="334" height="788"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="COVID-19 국내 지역별 상세 현황" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dDw-vE-VLP">
+                                        <rect key="frame" x="2" y="0.0" width="330" height="84"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2020-06-02 기준" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qot-b3-K6z">
+                                        <rect key="frame" x="90" y="99" width="154" height="24"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="CI0-QQ-6uL">
+                                        <rect key="frame" x="0.0" y="138" width="334" height="20.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="지역" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WGv-i8-30F">
+                                                <rect key="frame" x="0.0" y="0.0" width="67" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="확진자" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1F2-1M-TCG">
+                                                <rect key="frame" x="67" y="0.0" width="66.5" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="치료중" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="itS-MG-8Hd">
+                                                <rect key="frame" x="133.5" y="0.0" width="67" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="사망자" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wjg-HJ-kMX">
+                                                <rect key="frame" x="200.5" y="0.0" width="66.5" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="격리해제" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FmE-6n-FbG">
+                                                <rect key="frame" x="267" y="0.0" width="67" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="YMJ-kl-1hJ">
+                                        <rect key="frame" x="0.0" y="173.5" width="334" height="614.5"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <prototypes>
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="COVIDDetailCell" id="5wb-uQ-87T" customClass="COVIDDetailCell" customModule="AvoidCoronaApp" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="28" width="334" height="43"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="5wb-uQ-87T" id="jaA-Vw-lWy">
+                                                    <rect key="frame" x="0.0" y="0.0" width="334" height="43"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <subviews>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="gpb-YU-99s">
+                                                            <rect key="frame" x="0.0" y="11" width="334" height="21"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6tB-Jd-gdP">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="67" height="21"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="An4-Ab-UcA">
+                                                                    <rect key="frame" x="67" y="0.0" width="66.5" height="21"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iuG-3i-qBY">
+                                                                    <rect key="frame" x="133.5" y="0.0" width="67" height="21"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EVt-qg-Z9j">
+                                                                    <rect key="frame" x="200.5" y="0.0" width="66.5" height="21"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6SM-rQ-RnF">
+                                                                    <rect key="frame" x="267" y="0.0" width="67" height="21"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                        </stackView>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstAttribute="trailing" secondItem="gpb-YU-99s" secondAttribute="trailing" id="E9Y-WF-kAM"/>
+                                                        <constraint firstItem="gpb-YU-99s" firstAttribute="top" secondItem="jaA-Vw-lWy" secondAttribute="topMargin" id="Z16-nX-1k9"/>
+                                                        <constraint firstItem="gpb-YU-99s" firstAttribute="centerY" secondItem="jaA-Vw-lWy" secondAttribute="centerY" id="hfE-aC-xAM"/>
+                                                        <constraint firstItem="gpb-YU-99s" firstAttribute="leading" secondItem="jaA-Vw-lWy" secondAttribute="leading" id="x6o-UB-qBH"/>
+                                                    </constraints>
+                                                </tableViewCellContentView>
+                                                <connections>
+                                                    <outlet property="caseLabel" destination="An4-Ab-UcA" id="f4L-tn-ROw"/>
+                                                    <outlet property="cityLabel" destination="6tB-Jd-gdP" id="a8v-s0-ODb"/>
+                                                    <outlet property="deathLabel" destination="EVt-qg-Z9j" id="o8y-8T-8MY"/>
+                                                    <outlet property="nowcaseLabel" destination="iuG-3i-qBY" id="t2F-A8-iPz"/>
+                                                    <outlet property="recoveredLabel" destination="6SM-rQ-RnF" id="qsP-q5-qj9"/>
+                                                </connections>
+                                            </tableViewCell>
+                                        </prototypes>
+                                    </tableView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="CI0-QQ-6uL" secondAttribute="trailing" id="So4-LI-6KW"/>
+                                    <constraint firstItem="CI0-QQ-6uL" firstAttribute="leading" secondItem="Ncm-h3-Dua" secondAttribute="leading" id="kTG-3o-4vK"/>
+                                    <constraint firstItem="YMJ-kl-1hJ" firstAttribute="leading" secondItem="Ncm-h3-Dua" secondAttribute="leadingMargin" id="mdP-tM-6si"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="4jh-k5-jU3" firstAttribute="trailing" secondItem="Ncm-h3-Dua" secondAttribute="trailing" constant="40" id="2LX-qj-yr0"/>
+                            <constraint firstItem="Ncm-h3-Dua" firstAttribute="top" secondItem="4jh-k5-jU3" secondAttribute="top" constant="20" id="hiJ-xC-E26"/>
+                            <constraint firstItem="Ncm-h3-Dua" firstAttribute="leading" secondItem="4jh-k5-jU3" secondAttribute="leading" constant="40" id="poq-Mg-fQJ"/>
+                            <constraint firstItem="Ncm-h3-Dua" firstAttribute="bottom" secondItem="4jh-k5-jU3" secondAttribute="bottom" id="vhY-bd-ZKq"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="4jh-k5-jU3"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="국내 지역별 상세 현황" id="v12-wY-4af"/>
+                    <navigationItem key="navigationItem" id="csa-VX-pOS"/>
+                    <connections>
+                        <outlet property="KoreaCOVIDTableView" destination="YMJ-kl-1hJ" id="scn-5G-XiO"/>
+                        <outlet property="dateLabel" destination="Qot-b3-K6z" id="sP9-0N-sdd"/>
+                        <outlet property="titleLabel" destination="dDw-vE-VLP" id="wd9-Df-gr8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tsO-CK-Sbd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="316" y="611"/>
+        </scene>
+        <!--Main Tab Bar Controller-->
+        <scene sceneID="ouK-jo-AOi">
+            <objects>
+                <tabBarController id="4zB-1C-oaY" customClass="MainTabBarController" customModule="AvoidCoronaApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="fQb-9x-Tql">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="eyc-BX-lvh"/>
+                        <segue destination="8zQ-iP-1jv" kind="relationship" relationship="viewControllers" id="YIQ-ca-B1w"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7Ep-dZ-3fr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1510" y="182"/>
+        </scene>
+        <!--오늘의 코로나는?-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="TodaysCoronaViewController" customModule="AvoidCoronaApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="stw-2I-Ee7">
+                                <rect key="frame" x="80.5" y="385" width="253" height="126"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="ZGs-rt-kmO">
+                                        <rect key="frame" x="0.0" y="0.0" width="253" height="126"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2bN-dE-OSg">
+                                                <rect key="frame" x="45.5" y="0.0" width="162" height="48"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                                <state key="normal" title="실시간 상황판"/>
+                                                <connections>
+                                                    <segue destination="ibq-Kn-jm0" kind="show" id="uki-VO-Lq9"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="apO-pQ-1Ql">
+                                                <rect key="frame" x="0.0" y="78" width="253" height="48"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                                <state key="normal" title="국내 지역별 상세 현황"/>
+                                                <connections>
+                                                    <segue destination="fbI-a0-ovA" kind="show" id="v0j-iN-Wmj"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="오늘의 코로나는 ?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DbB-un-F2h">
+                                <rect key="frame" x="67.5" y="94" width="279.5" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="DbB-un-F2h" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7N5-eg-sv2"/>
+                            <constraint firstItem="stw-2I-Ee7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="CLb-Nv-CDX"/>
+                            <constraint firstItem="stw-2I-Ee7" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="IkN-nb-ZlK"/>
+                            <constraint firstItem="DbB-un-F2h" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="jhP-u3-EZm"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="오늘의 코로나는?" id="dIw-8U-laT"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-593" y="-250"/>
+        </scene>
+        <!--실시간 상황판-->
+        <scene sceneID="Y5Z-Oo-fME">
+            <objects>
+                <viewController id="ibq-Kn-jm0" customClass="RealtimeSituationBoardViewController" customModule="AvoidCoronaApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gWU-iH-VTC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="gLq-ZD-oLT">
+                                <rect key="frame" x="40" y="20" width="334" height="788"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="COVID-19 실시간 상황판" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4U4-v2-zHB">
+                                        <rect key="frame" x="21" y="0.0" width="292.5" height="84"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Oxh-ED-IuM">
+                                        <rect key="frame" x="0.0" y="99" width="334" height="689"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <prototypes>
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="RealtimeSituationBoardCell" id="i7p-70-UUp" customClass="RealtimeSituationBoardCell" customModule="AvoidCoronaApp" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="28" width="334" height="43"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="i7p-70-UUp" id="CEn-o0-YPv">
+                                                    <rect key="frame" x="0.0" y="0.0" width="334" height="43"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <subviews>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GJH-RT-6OJ">
+                                                            <rect key="frame" x="20" y="11" width="314" height="21"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cmr-bg-1ty">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="78.5" height="21"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AbT-md-M64">
+                                                                    <rect key="frame" x="78.5" y="0.0" width="235.5" height="21"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                            <constraints>
+                                                                <constraint firstItem="cmr-bg-1ty" firstAttribute="width" secondItem="AbT-md-M64" secondAttribute="width" multiplier="1:3" id="E69-Sk-BWX"/>
+                                                            </constraints>
+                                                        </stackView>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstItem="GJH-RT-6OJ" firstAttribute="centerY" secondItem="CEn-o0-YPv" secondAttribute="centerY" id="R1m-fC-NXJ"/>
+                                                        <constraint firstItem="GJH-RT-6OJ" firstAttribute="top" secondItem="CEn-o0-YPv" secondAttribute="topMargin" id="g8O-HH-oi3"/>
+                                                        <constraint firstItem="GJH-RT-6OJ" firstAttribute="leading" secondItem="CEn-o0-YPv" secondAttribute="leading" constant="20" id="oU2-PL-CAI"/>
+                                                        <constraint firstAttribute="trailing" secondItem="GJH-RT-6OJ" secondAttribute="trailing" id="ueS-mF-2LI"/>
+                                                    </constraints>
+                                                </tableViewCellContentView>
+                                                <connections>
+                                                    <outlet property="titleLabel" destination="cmr-bg-1ty" id="Su9-iL-LUZ"/>
+                                                    <outlet property="valueLabel" destination="AbT-md-M64" id="BtA-Dc-hcm"/>
+                                                </connections>
+                                            </tableViewCell>
+                                        </prototypes>
+                                    </tableView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Oxh-ED-IuM" firstAttribute="leading" secondItem="gLq-ZD-oLT" secondAttribute="leadingMargin" id="tYe-U5-79c"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="gLq-ZD-oLT" firstAttribute="top" secondItem="5Z7-QS-BXS" secondAttribute="top" constant="20" id="4el-K9-te6"/>
+                            <constraint firstItem="gLq-ZD-oLT" firstAttribute="leading" secondItem="5Z7-QS-BXS" secondAttribute="leading" constant="40" id="6Wo-AO-pSx"/>
+                            <constraint firstItem="gLq-ZD-oLT" firstAttribute="bottom" secondItem="5Z7-QS-BXS" secondAttribute="bottom" id="BvZ-0z-Ss0"/>
+                            <constraint firstItem="5Z7-QS-BXS" firstAttribute="trailing" secondItem="gLq-ZD-oLT" secondAttribute="trailing" constant="40" id="uNM-R7-lw9"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="5Z7-QS-BXS"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="실시간 상황판" id="exo-tW-p39"/>
+                    <navigationItem key="navigationItem" id="FVP-HH-zoL"/>
+                    <connections>
+                        <outlet property="COVIDTableView" destination="Oxh-ED-IuM" id="Hqh-5Z-nh0"/>
+                        <outlet property="titleLabel" destination="4U4-v2-zHB" id="UYw-FH-05j"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7RG-zh-Rzp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="316" y="-250"/>
         </scene>
     </scenes>
 </document>
