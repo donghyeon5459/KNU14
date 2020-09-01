@@ -1,12 +1,15 @@
 //
 //  AppDelegate.swift
-//  avoidcorona
+//  AvoidCoronaApp
 //
-//  Created by 김동현 on 2020/07/31.
-//  Copyright © 2020 김동현. All rights reserved.
+//  Created by Azderica on 2020/06/02.
+//  Copyright © 2020 Azderica. All rights reserved.
 //
 
 import UIKit
+import GoogleMaps
+import GooglePlaces
+import GoogleMapsUtils
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -15,6 +18,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        GMSServices.provideAPIKey("AIzaSyAzSgc67S9wL4MrP5WmgY9YCpLzkU8UEyI")
+        GMSPlacesClient.provideAPIKey("AIzaSyAzSgc67S9wL4MrP5WmgY9YCpLzkU8UEyI")
         return true
     }
 
