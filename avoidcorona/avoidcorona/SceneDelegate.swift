@@ -1,9 +1,9 @@
 //
 //  SceneDelegate.swift
-//  avoidcorona
+//  AvoidCoronaApp
 //
-//  Created by 김동현 on 2020/07/31.
-//  Copyright © 2020 김동현. All rights reserved.
+//  Created by Azderica on 2020/06/02.
+//  Copyright © 2020 Azderica. All rights reserved.
 //
 
 import UIKit
